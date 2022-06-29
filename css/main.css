@@ -1,18 +1,26 @@
-/* Variables =============== */
+@import "reset.css";
+@import "vars.css";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
 
-:root {
-  --main-color: #4aa1be;
-  --main-text-color: #333;
+h1 {
+  color: var(--main-color);
 }
 
-/* Article =========== */
+/* Article =============== */
 
 .article {
   border: 1px solid var(--main-color);
+  background-color: var(--main-bg-color);
   color: var(--main-text-color);
   text-align: center;
+  margin-bottom: 2rem;
   padding: 3rem 0.8rem;
   border-radius: 8px;
+}
+
+.article.article--dark {
+  color: var(--main-bg-color);
+  background-color: var(--main-text-color);
 }
 
 .article__title {
